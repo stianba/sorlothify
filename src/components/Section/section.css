@@ -1,0 +1,18 @@
+.section {
+  margin: 24px auto 3rem;
+  padding: 0 16px;
+  max-width: 80rem;
+}
+
+.section > .title > .icon {
+  vertical-align: middle;
+  margin-top: -.22em;
+  margin-right: .5rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin: 3rem auto 4rem;
+    padding: 0 2rem;
+  }
+}

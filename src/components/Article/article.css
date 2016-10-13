@@ -1,0 +1,122 @@
+.article {
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.article.-featured {
+  background: #222;
+  height: 30rem;
+}
+
+.article > .body {
+  max-height: 10em;
+  overflow-y: hidden;
+}
+
+.article > .meta {
+  margin: auto 0 .7rem;
+  padding: .7rem 0 0;
+}
+
+.article.-medium > .body {
+  max-height: 30em;
+  overflow-y: hidden;
+}
+
+.article.-featured > .body {
+  max-height: none;
+  position: absolute;
+  bottom: 68px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.article > .body > .image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  height: 80px;
+  margin: 0 16px 16px 0;
+  width: 80px;
+  z-index: 1;
+}
+
+.article.-featured > .body > .text {
+  background: rgba(0, 0, 0, .7);
+  bottom: 0;
+  left: 0;
+  padding: 0 1rem .5rem;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.article > .body > .text > .title {
+  color: rgba(0, 0, 0, .84);
+  font-size: 16px;
+}
+
+.article > .body > .text > .ingress {
+  color: rgba(0, 0, 0, .54);
+  font-size: 14px;
+}
+
+.article.-large > .body > .image,
+.article.-medium > .body > .image {
+  float: none;
+  height: 180px;
+  margin: 0;
+  width: 100%;
+}
+
+.article.-featured > .body > .image {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.article.-medium > .body > .text > .title {
+  font-size: 20px;
+}
+
+.article.-featured > .body > .text > .title {
+  color: #fff;
+  font-size: 26px;
+}
+
+.article.-featured > .body > .text > .ingress {
+  color: rgba(255, 255, 255, .84);
+}
+
+.article.-small > .body > .text > .title {
+  margin-top: 0;
+}
+
+
+.article.-featured > .meta {
+  padding: 0 0 0 1rem;
+}
+
+.article.-featured > .meta {
+  padding: 0 0 0 1rem;
+}
+
+.article.-featured .chip > .text > .line {
+  color: #fff;
+}
+
+.article.-featured .chip > .text > .line.-sub {
+  color: rgba(255, 255, 255, .54);
+}
+
+.article.-featured svg {
+  fill: #fff!important;
+}
